@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f66e350821.js" crossorigin="anonymous"></script>
+    <title>Clothes</title>
+</head>
+<body>
+    <header class="header">
+        <div class='logo'>
+            <i class="fas fa-tshirt"></i>
+            <span>Clothes</span>
+        </div>
+        <div class='icons'>
+            <label for="location">지역 검색:</label>
+            <input type="text" id="location">
+            <button>
+                <i class="fas fa-search-location"></i>
+            </button>
+        </div>
+    </header>
+    <div class="main">
+        <aside class="aside">
+            <div class="sidetitle">기온별 보기</div>
+            <ul>
+                <li><a href="#" class="red">28~</a></li>
+                <li><a href="#" class="orange">22~27</a></li>
+                <li><a href="#" class="yellow">16~21</a></li>
+                <li><a href="#" class="green">9~15</a></li>
+                <li><a href="#" class="blue">3~9</a></li>
+                <li><a href="#" class="purple">~2</a></li>
+            </ul>
+        </aside>
+        <content class="content">
+            <iframe width="100%" height="245" src="https://forecast.io/embed/#lat=33.5007&lon=126.5288&name=제주&color=#ffc261&font=arial&units=si" frameborder="0"></iframe>
+            <div class="recommend">
+                <div class="title">Outer</div>
+                    <div class='recommendImage'>
+                        <a href="#">코트-이미지</a>
+                        <a href="#">가죽자켓-이미지</a>
+                        <a href="#">야상-이미지</a>
+                    </div>
+                <div class='title'>Top</div>
+                    <div class='recommendImage'>
+                        <a href="#">기모맨투맨-이미지</a>
+                        <a href="#">니트-이미지</a>
+                        <a href="#">기모후드티-이미지</a>
+                    </div>
+                <div class="title">Bottom</div>
+                    <div class='recommendImage'>
+                        <a href="#">청바지-이미지</a>
+                        <a href="#">슬랙스-이미지</a>
+                        <a href="#">트레이닝바지-이미지</a>
+                    </div>          
+            </div>
+        </content>
+    </div>
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</html>
