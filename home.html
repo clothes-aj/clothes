@@ -39,7 +39,56 @@
             </ul>
         </aside>
         <content class="content">
-            <iframe width="100%" height="245" src="https://forecast.io/embed/#lat=33.5007&lon=126.5288&name=제주&color=#ffc261&font=arial&units=si" frameborder="0"></iframe>
+            <div class="weather">
+                <script src="weather.js"></script>
+                <div class="current">
+                    <div id="cTime"></div>
+                    <div id="cTemp"></div>
+                    <div id="minTemp"></div>
+                    <div id="maxTemp"></div>
+                    <div id="cIcon"></div>
+                    <div id="cFeel"></div>
+                    <div id="cPop"></div>
+                </div>
+                <div class="hourly">
+                    <div id="hour0">
+                        ---------------------------
+                        <p id="0-time"></p>
+                        <div id="h0-icon"></div>
+                        <p id="0-temp"></p>
+                    </div>
+                    <div id="hour1">
+                        ---------------------------
+                        <p id="1-time"></p>
+                        <div id="h1-icon"></div>
+                        <p id="1-temp"></p>
+                    </div>
+                    <div id="hour2">
+                        ---------------------------
+                        <p id="2-time"></p>
+                        <div id="h2-icon"></div>
+                        <p id="2-temp"></p>
+                    </div>
+                    <div id="hour3">
+                        ---------------------------
+                        <p id="3-time"></p>
+                        <div id="h3-icon"></div>
+                        <p id="3-temp"></p>
+                    </div>
+                    <div id="hour4">
+                        ---------------------------
+                        <p id="4-time"></p>
+                        <div id="h4-icon"></div>
+                        <p id="4-temp"></p>
+                    </div>
+                    <div id="hour5">
+                        ---------------------------
+                        <p id="5-time"></p>
+                        <div id="h5-icon"></div>
+                        <p id="5-temp"></p>
+                    </div>
+                </div>
+            </div>
             <div class="recommend">
                 <div class="title">Outer</div>
                     <div class='recommendImage'>
