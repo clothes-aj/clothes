@@ -18,8 +18,8 @@ const addrToXY = (location) => {
         if (!response.ok) throw new Error(response.statusText);
         return response.json();
     }).then((data) => {
-        lat = data.documents[0].x;
-        lon = data.documents[0].y;
+        lat = data.documents[0].y;
+        lon = data.documents[0].x;
         console.log(lat, lon);
         app.fetchWeather(lat,lon);
     });
