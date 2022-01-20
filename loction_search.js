@@ -1,7 +1,10 @@
-
 const search = () => {
     let location = document.querySelector('#location').value;
-    addrToXY(location);
+    if(location == '') {
+        alert("동네를 입력하세요.");
+    } else {
+        addrToXY(location);
+    }
 }
 
 const addrToXY = (location) => {
