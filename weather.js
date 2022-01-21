@@ -40,7 +40,7 @@ const app = {
         document.getElementById('cTemp').innerHTML = `현재 기온: ${Math.floor(resp.current.temp)}º`;
         document.getElementById('minTemp').innerHTML = `최저: ${Math.floor(resp.daily[0].temp.min)}º`;
         document.getElementById('maxTemp').innerHTML = `최고: ${Math.floor(resp.daily[0].temp.max)}º`;
-        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}.png' alt="icon">`;
+        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png' alt="icon">`;
         document.getElementById('cFeel').innerHTML = `체감 온도: ${Math.floor(resp.current.feels_like)}º`;
         document.getElementById('cPop').innerHTML = `강수 확률: ${resp.daily[0].pop}%`;
         //시간별 온도
