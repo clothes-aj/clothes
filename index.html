@@ -20,10 +20,12 @@
         </div>
         <div class='icons'>
             <label for="location">지역 검색:</label>
-            <input type="text" id="location">
-            <button id="searchBtn" onclick="search()">
-                <i class="fas fa-search-location"></i>
-            </button>
+            <div class="search">
+                <input type="text" id="location" placeholder="지역을 입력해주세요.">
+                <button id="searchBtn" onclick="search()">
+                    <i class="fas fa-search-location"></i>
+                </button>
+            </div>
         </div>
     </header>
     <div class="main">
@@ -38,52 +40,52 @@
                 <li><a href="#" class="purple">~2</a></li>
             </ul>
         </aside>
-        <content class="content">
+        <div class="content">
             <div class="weather">
                 <script src="weather.js"></script>
                 <div class="current">
-                    <div id="cTime"></div>
-                    <div id="cTemp"></div>
-                    <div id="minTemp"></div>
-                    <div id="maxTemp"></div>
                     <div id="cIcon"></div>
-                    <div id="cFeel"></div>
-                    <div id="cPop"></div>
+                    <div class="weatherInfo">
+                        <div id="cTime"></div>
+                        <div class="weatherInfoTitle">
+                            <div id="cTemp"></div>
+                            <div class="temperature">
+                                <div id="minTemp"></div>
+                                <div id="maxTemp"></div>
+                                <div id="cFeel"></div>
+                                <div id="cPop"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="hourly">
                     <div id="hour0">
-                        ---------------------------
-                        <p id="0-time"></p>
+                        <p id="0-time" style="font-size: 20px;"></p>
                         <div id="h0-icon"></div>
                         <p id="0-temp"></p>
                     </div>
                     <div id="hour1">
-                        ---------------------------
-                        <p id="1-time"></p>
+                        <p id="1-time" style="font-size: 20px;"></p>
                         <div id="h1-icon"></div>
                         <p id="1-temp"></p>
                     </div>
                     <div id="hour2">
-                        ---------------------------
-                        <p id="2-time"></p>
+                        <p id="2-time" style="font-size: 20px;"></p>
                         <div id="h2-icon"></div>
                         <p id="2-temp"></p>
                     </div>
                     <div id="hour3">
-                        ---------------------------
-                        <p id="3-time"></p>
+                        <p id="3-time" style="font-size: 20px;"></p>
                         <div id="h3-icon"></div>
                         <p id="3-temp"></p>
                     </div>
                     <div id="hour4">
-                        ---------------------------
-                        <p id="4-time"></p>
+                        <p id="4-time" style="font-size: 20px;"></p>
                         <div id="h4-icon"></div>
                         <p id="4-temp"></p>
                     </div>
                     <div id="hour5">
-                        ---------------------------
-                        <p id="5-time"></p>
+                        <p id="5-time" style="font-size: 20px;"></p>
                         <div id="h5-icon"></div>
                         <p id="5-temp"></p>
                     </div>
@@ -109,7 +111,7 @@
                         <a href="#">트레이닝바지-이미지</a>
                     </div>          
             </div>
-        </content>
+        </div>
     </div>
     <footer class="footer">
         footer
