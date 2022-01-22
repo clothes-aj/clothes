@@ -44,6 +44,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 15vh;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.3);
 }
 .logo {
   font-size: 30px;
@@ -183,6 +184,7 @@ a {
 }
 .recommend {
   padding-top: 50px;
+  padding-left: 50px;
 }
 
 .recommend .title {
@@ -202,7 +204,7 @@ a {
 /*footer*/
 .footer {
   height: 15vh;
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(120, 120, 120, 0.3);
   margin-top: calc(var(--padding) * 2);
 }
 .gitAddress {
