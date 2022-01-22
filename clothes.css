@@ -22,14 +22,17 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background--color);
   color: var(--font--color);
   width: 100%;
-  padding: 20px 60px;
+  padding: 20px 70px;
 }
 /*header css*/
 li {
+  text-align: center;
+  padding: var(--padding);
+  font-size: var(--medium);
   list-style: none;
 }
 a {
@@ -42,9 +45,11 @@ a {
   align-items: center;
   height: 15vh;
 }
-
 .logo {
-  font-size: 45px;
+  font-size: 30px;
+}
+.logo i {
+  font-size: 40px;
 }
 .icons {
   display: flex;
@@ -53,6 +58,10 @@ a {
 .icons label {
   font-size: 18px;
   padding-right: 10px;
+}
+.search {
+  background-color: white;
+  border: 2px solid var(--font--color);
 }
 .icons input {
   font-size: 16px;
@@ -68,11 +77,13 @@ a {
   outline: none;
   border: 0px;
 }
-.search {
-  background-color: white;
-  border: 2px solid var(--font--color);
+.icons button i {
+  font-size: 20px;
 }
-/*aside css*/
+/*main css(aside)*/
+.main {
+  display: flex;
+}
 .red {
   color: var(--red--color);
 }
@@ -91,28 +102,30 @@ a {
 .purple {
   color: var(--purple--color);
 }
-
-li {
-  text-align: center;
-  padding: var(--padding);
-  font-size: var(--medium);
-}
 .aside {
-  width: 10%;
+  padding-top: 30px;
+  width: 12%;
 }
 .aside .sidetitle {
+  font-size: 18px;
+  height: 50px;
+  line-height: 40px;
+  background-color: var(--font--color);
+  color: white;
+  padding: 5px;
+  border-radius: 32px;
   text-align: center;
-  margin-bottom: var(--padding);
 }
 .aside ul li:hover {
-  background-color: black;
+  background-color: var(--font--color);
   transition: 1s;
 }
-
-/* main css*/
-.main {
-  display: flex;
+.aside ul li {
+  height: 50px;
+  border-radius: 32px;
 }
+
+/* main css(content)*/
 .content {
   width: 90%;
 }
@@ -121,23 +134,11 @@ li {
   flex-direction: column;
   align-items: stretch;
 }
-.hourly {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-grow: 1;
-}
-.hourly div {
-  flex-grow: 1;
-  padding-left: 5%;
-  text-align: center;
-}
 .current {
   flex-grow: 1;
   display: flex;
   align-items: center;
 }
-
 #cIcon {
   flex-grow: 1;
 }
@@ -165,7 +166,17 @@ li {
   font-size: 16px;
   text-align: right;
 }
-
+.hourly {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
+}
+.hourly div {
+  flex-grow: 1;
+  padding-left: 5%;
+  text-align: center;
+}
 .recommend {
   padding-top: 50px;
 }
@@ -186,7 +197,21 @@ li {
 
 /*footer*/
 .footer {
-  text-align: center;
+  height: 15vh;
   border-top: 1px solid black;
   margin-top: calc(var(--padding) * 2);
+}
+.gitAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.gitAddress .title {
+  padding: 10px 0px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.personalGitAddress {
+  padding: 3px;
+  font-size: 8px;
 }
