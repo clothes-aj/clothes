@@ -103,6 +103,10 @@ a {
   color: var(--purple--color);
 }
 .aside {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100%;
+  top: 0;
   padding-top: 30px;
   width: 12%;
 }
@@ -127,7 +131,7 @@ a {
 
 /* main css(content)*/
 .content {
-  width: 90%;
+  width: 80%;
 }
 .weather {
   display: flex;
