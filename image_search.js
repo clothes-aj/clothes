@@ -1,9 +1,10 @@
 window.onload = () => {
     console.log("onload")
-    getUser()
+    setClothesImage()
+    // setJsonTemp()
 }
 
-async function getUser() {
+async function setClothesImage() {
     const config = {
         headers: {
             'Authorization':'KakaoAK b62c85ae2923afa9548cf2e7734d7508'
@@ -21,5 +22,21 @@ async function getUser() {
             .catch(error => console.log(error));
     }
 }
+
+// async function setJsonTemp() {
+//     const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+//     const request = new Request(requestURL);
+//
+//     const response = await fetch(request);
+//     const setJson = await response.json();
+//
+//     const temps = setJson['content'];
+//     for (const temp of temps) {
+//         document.getElementById('clothes1').setAttribute("alt", `${temp.temperature}`);
+//         document.getElementById('clothes1').setAttribute("alt", `${temp.temperature}`);
+//         document.getElementById('clothes1').setAttribute("alt", `${temp.temperature}`);
+//     }
+//
+// }
 
 
