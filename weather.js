@@ -38,6 +38,7 @@ const app = {
         // 현재 날씨
         document.getElementById('cTime').innerHTML = `${app.getCurrentTime(resp.current.dt)}`;
         document.getElementById('cTemp').innerHTML = `현재 기온: ${Math.floor(resp.current.temp)}º`;
+        setClothesImage(Math.floor(resp.current.temp))
         document.getElementById('minTemp').innerHTML = `최저: ${Math.floor(resp.daily[0].temp.min)}º`;
         document.getElementById('maxTemp').innerHTML = `최고: ${Math.floor(resp.daily[0].temp.max)}º`;
         document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png' alt="icon">`;
