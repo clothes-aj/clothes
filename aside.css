@@ -289,6 +289,10 @@ a {
   line-height: 40px;
   color: var(--font--color);
 }
+#clothes1, #clothes2, #clothes3, #clothes4, #clothes5, #clothes6 {
+  width: 100px;
+  height: 100px;
+}
 
 /*footer*/
 .footer {
