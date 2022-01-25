@@ -5,7 +5,9 @@
   --red--color: #d32f2f;
   --orange--color: #f57c00;
   --yellow--color: #ffeb3b;
+  --lightgreen--color: #80FF00;
   --green--color: #4caf50;
+  --lightblue--color: #01DFD7;
   --blue--color: #1976d2;
   --purple--color: #320b86;
   /* size */
@@ -95,8 +97,14 @@ a {
 .yellow {
   background-color: var(--yellow--color);
 }
+.lightgreen {
+  background-color: var(--lightgreen--color);
+}
 .green {
   background-color: var(--green--color);
+}
+.lightblue {
+  background-color: var(--lightblue--color);
 }
 .blue {
   background-color: var(--blue--color);
@@ -130,7 +138,7 @@ a {
   text-align: center;
 }
 .aside ul li {
-  height: 80px;
+  height: 58px;
   border-radius: 32px;
 }
 .sidbar_pos {
@@ -176,7 +184,7 @@ a {
   transition: 1s;
   background-color: var(--font--color);
 }
-.red:hover > .red_box, .orange:hover > .orange_box, .yellow:hover > .yellow_box, .green:hover > .green_box, .blue:hover > .blue_box, .purple:hover > .purple_box {
+.red:hover > .red_box, .orange:hover > .orange_box, .yellow:hover > .yellow_box, .lightgreen:hover > .lightgreen_box, .green:hover > .green_box, .lightblue:hover > .lightblue_box, .blue:hover > .blue_box, .purple:hover > .purple_box {
   display: block;
 }
 
